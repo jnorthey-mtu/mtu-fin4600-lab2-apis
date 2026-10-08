@@ -1,0 +1,13 @@
+# secrets
+.env
+# local caches and environments
+cache/
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+Thumbs.db
+# exported submissions
+*.html
