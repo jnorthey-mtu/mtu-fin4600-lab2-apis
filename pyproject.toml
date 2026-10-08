@@ -1,0 +1,32 @@
+[project]
+name = "mtu-fin4600-lab2-apis"
+version = "0.1.0"
+description = "MTU FIN 4600 · Lab 2 — Talking to Markets: Financial APIs from the URL up"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+    "ipywidgets>=8.1",       # interactive screener sliders
+    "nbformat>=5.10",        # needed by plotly to display figures in notebooks
+    "jinja2>=3.1",           # pandas table styling
+    "requests>=2.32",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "matplotlib>=3.8",
+    "plotly>=5.24",
+    "python-dotenv>=1.0",    # reads API keys from .env
+    # Encoding face-off (Mission 8)
+    "protobuf>=5.26",
+    "fastavro>=1.9",
+    "msgpack>=1.0",
+    "cbor2>=5.6",
+]
+
+[project.optional-dependencies]
+# Library wrapper around Yahoo's URLs, for comparison only:  uv sync --extra yfinance
+yfinance = ["yfinance>=1.0"]
+
+[tool.uv]
+# This is a lab, not an installable package: uv only manages the environment.
+package = false
