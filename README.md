@@ -14,7 +14,7 @@ pandas DataFrames, chart the results, and build an interactive stock screener of
 | 5 | **The Mitten Screener** (interactive) | Yahoo Finance + FRED |
 | 6 | Yield-curve recession signal | FRED |
 | 7 | Company filings as data | SEC EDGAR |
-| 8 | Encoding face-off: JSON vs XML vs Protobuf vs Avro | — |
+| 8 | Encoding face-off: XML vs JSON vs Protobuf vs Avro vs FIX tag=value vs FIX SBE | — |
 
 ---
 
@@ -138,7 +138,7 @@ lab2_apis.ipynb        ← the lab (start here)
 curl_cheatsheet.md     ← command-line reference for macOS & Windows
 helpers/http.py        ← polite fetch(): caching, retries, back-off
 helpers/market.py      ← Yahoo chart endpoint → pandas; synthetic fallback
-helpers/encodings.py   ← JSON / XML / Protobuf / Avro / MessagePack / CBOR encoders
+helpers/encodings.py   ← JSON / XML / Protobuf / Avro / MessagePack / CBOR / FIX tag=value / FIX SBE encoders
 pyproject.toml         ← dependencies (managed by uv)
 uv.lock                ← exact pinned versions — commit it, don't edit by hand
 .python-version  .env.example  .gitignore
